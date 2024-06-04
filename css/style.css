@@ -11,21 +11,21 @@
 ul{list-style:none;}
 
 .navbar {
-    margin-bottom: 0;
+    position: absolute;
+    padding-top: 25px;
     background-color: transparent;
     border: 0;
-    font-size: 11px !important;
-    letter-spacing: 4px;
+    font-size: 18px !important;
 }
 
-  
+.navbar img{
+    width: 120px;
+    position: absolute;
+    left: 50%;
+    top: 20px;
+}
 /* Add a gray color to all navbar links */
 .navbar li a, .navbar .navbar-brand {
-color: #d5d5d5 !important;
-}
-
-/* On hover, the links will turn white */
-.navbar-nav li a:hover {
 color: #fff !important;
 }
 
@@ -43,7 +43,7 @@ border-color: transparent;
 /* Dropdown */
 .open .dropdown-toggle {
 color: #fff ;
-background-color: #555 !important;
+background-color: transparent!important;
 }
 
 /* Dropdown links */
@@ -53,7 +53,12 @@ color: #000 !important;
 
 /* On hover, the dropdown links will turn red */
 .dropdown-menu li a:hover {
-background-color: red !important;
+background-color: black !important;
+color: white!important;
+}
+.dropdown-menu{
+    font-size: 20px;
+    
 }
 
 
@@ -65,6 +70,27 @@ background-color: red !important;
     left:30px;           
     text-align: left;            
 }
+.item p {
+    position: absolute;
+    bottom: 250px;
+    font-size: 20px;
+}
+.item h2 {
+    position: absolute;
+    bottom: 160px;
+    font-size: 60px;
+    font-weight: bold;
+}
+.item .btn{
+    position: relative;
+    bottom: 100px;
+    margin-right: 10px;
+    left: 40px;
+    padding: 15px 20px;
+    border-radius: 0;
+    font-weight: bold;
+}
+
 #bestKia h3, #news h3{
     font-size: 45px;
     padding: 60px;
@@ -78,6 +104,7 @@ background-color: red !important;
 }
 #bestKia .nav-tabs{
     margin-bottom: 50px;
+    color: black;
 }
 #bestKia .nav-tabs li.active a{           
     border-radius: 0;
@@ -91,7 +118,13 @@ background-color: red !important;
     position: absolute;
     right: 30px;
     background-color: black;
+    
 }
+.price{
+    font-size: 23px;
+    padding-bottom: 20px;
+}
+
 #bestKia .box .btn{
     border-radius: 0;
 }
@@ -117,7 +150,7 @@ background-color: red !important;
     transition: all 0.5s;
 }
 #etc .box img{
-    width: 25px; 
+    width: 35px; 
 }
 #etc .box h3{
     font-size: 17px;
@@ -168,18 +201,20 @@ background-color: red !important;
     padding-bottom: 150px;
 }
 #footer1{
-    background: #05141F;
-}
-.price{
-    font-size: 23px;
-    padding-bottom: 20px;
-}
-#footer1{
     background-color: #05141F;
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 20px;
 }
 #footer1 .col-sm-6 ul{
     position: absolute;
     right: 0;
+}
+#footer1 .col-sm-6 div{
+    position: absolute;
+    right: 0;
+    top: 98px;
 }
 #footer1 .col-sm-6 li{
     display: inline;
@@ -188,12 +223,36 @@ background-color: red !important;
     display: inline-block;
     padding: 10px;
 }
+#footer1 .row .col-sm-3:nth-child(2){
+    font-size: 15px;
+    font-weight: 100;
+    color: #777;
+    line-height: 2;
+    margin-top: 6px;
+}
+#footer1 .row .col-sm-3:nth-child(1){
+    line-height: 2.5;
+}
+#footer1 .row .col-sm-3{
+    padding-top: 15px;
+}
+
+.dropup button{
+    background-color: #05141F;
+    margin-left: 60px;
+    border:none;
+    width: 300px;
+    height: 40px;
+    color: white;
+
+}
 #footer2{
-    background-color: #010E18;
+    background-color: #05141F;
 }
 #footer2 .col-sm-6{
     float: right;
 }
+
 #collapse{display: none;}
 
 @media screen and (max-width: 767px){
@@ -222,7 +281,7 @@ background-color: red !important;
     #collapse{display: block;}
     
     #collapse .collapsible {
-        background-color: #777;
+        background-color: #05141F;
         color: white;
         cursor: pointer;
         padding: 18px;
@@ -257,4 +316,49 @@ background-color: red !important;
     background-color: #f1f1f1;
     }
     #footer2 .container .row:nth-of-type(3){display: none;}
+
+    #bestKia .box{
+        border:1px solid #dddddd;
+        border-radius: 10px;
+        padding: 20px;
+        line-height: 2.5;
+        margin-bottom: 20px;
+        
+    }
+
+    .navbar img{
+        width: 77px;
+        position: absolute;
+        left: 18px;
+        top: 9px;
+    }
+    
+
+    #etc .box{
+        padding: 30px;
+        margin-bottom: 20px;
+        background-color: #eee;
+        transition: all 0.5s;
+    }
+    .item p {
+        position: absolute;
+        bottom: 250px;
+        font-size: 20px;
+    }
+    .item h2 {
+        position: absolute;
+        bottom: 160px;
+        font-size: 60px;
+        font-weight: bold;
+    }
+    .item .btn{
+        position: relative;
+        bottom: 100px;
+        margin-right: 10px;
+        left: 40px;
+        padding: 15px 20px;
+        border-radius: 0;
+        font-weight: bold;
+    }
+    
 }

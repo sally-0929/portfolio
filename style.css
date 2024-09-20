@@ -67,7 +67,7 @@ button img:active {
     position: absolute;
     /* 셀 배치를 약간씩 떨어뜨림*/
     width: 300px;
-    height: 210px ;
+    height: 190px;
     transition: all .5s;
     font-size: 30px;
     color: #fff;
@@ -88,7 +88,7 @@ button img:active {
     position: absolute;
     /* 셀 배치를 약간씩 떨어뜨림*/
     width: 300px;
-    height: 210px ;
+    height: 190px ;
     transition: all .5s;
     font-size: 30px;
     color: #fff;
@@ -97,6 +97,11 @@ button img:active {
     align-items: center;
     justify-content: center;
     opacity: 1;
+}
+
+.carousel-card img:hover {
+    transform: scale(1.5); /* 크기 증가 */
+    z-index: 1; /* hover 시 이미지를 앞쪽으로 가져오기 */
 }
 
 .carousel-card:nth-child(1) {
@@ -113,10 +118,6 @@ button img:active {
 
 .carousel-card:nth-child(5) {
     background-color: blue;
-}
-
-.carousel-card:nth-child(6) {
-    background-color: navy;
 }
 
 .carousel-card:nth-child(7) {
@@ -142,12 +143,12 @@ button img:active {
 .carousel2 {
     display: flex;
     transition: transform 0.5s ease;
+
     /* Removing any 3D properties */
 }
 
 .carousel-card2 {
     min-width: 1005px; /* Keep this width for the cards */
-    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;

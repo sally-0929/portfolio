@@ -36,7 +36,7 @@ const totalCards = carouselCard2.length;
 
 // Update the carousel position
 function updateCarousel() {
-    const translateX = -(currentIndex2 * 1005); // Card width for translation
+    const translateX = -(currentIndex2 *1005); // Card width for translation
     carousel2.style.transform = `translateX(${translateX}px)`;
 }
 
@@ -74,27 +74,3 @@ nextBtn2.addEventListener('click', () => {
         updateCarousel();
     }
 });
-
-let currentImg = carouselCard[index].querySelector('img');
-
-function updateCarousel() {
-    carousel.style.transform = `rotateY(${-angle}deg)`;
-    carouselCard.forEach((card, idx) => {
-        card.querySelector('img').style.transform = idx === index ? 'scale(1.5)' : 'scale(1)'; // 현재 인덱스 이미지 확대
-    });
-}
-
-prevBtn.addEventListener('click', () => {
-    angle -= rotateAngle;
-    index = (index - 1 + carouselCard.length) % carouselCard.length; // 인덱스 조정
-    updateCarousel();
-});
-
-nextBtn.addEventListener('click', () => {
-    angle += rotateAngle;
-    index = (index + 1) % carouselCard.length;
-    updateCarousel();
-});
-
-// 초기 설정
-updateCarousel();

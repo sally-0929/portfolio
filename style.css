@@ -16,6 +16,11 @@
     font-family: Arial, sans-serif;
     margin: 10%;
 }
+
+.business-card #info div{
+    margin: 30px;
+}
+
 .profile-img {
     min-width: 500px;
     border-radius: 50%;
@@ -136,34 +141,6 @@ button img:active {
 .carousel-card img:hover {
     transform: scale(1.5); /* 크기 증가 */
     z-index: 1; /* hover 시 이미지를 앞쪽으로 가져오기 */
-}
-
-.carousel-card:nth-child(1) {
-    background-color: red;
-}
-
-.carousel-card:nth-child(2) {
-   background-color: orange;
-}
-
-.carousel-card:nth-child(3) {
-    background-color: yellow;
-}
-
-.carousel-card:nth-child(5) {
-    background-color: blue;
-}
-
-.carousel-card:nth-child(7) {
-    background-color: purple;
-}
-
-.carousel-card:nth-child(8) {
-    background-color: pink;
-}
-
-.carousel-card:nth-child(9) {
-    background-color: salmon;
 }
   
 .scene2 {
